@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
-
 const navLinks = ["Projects", "Skills", "About"];
 
 const Navbar = () => {
