@@ -45,7 +45,7 @@ const About = () => {
           <div className="flex justify-center md:justify-end">
             <div className="w-64 h-64 rounded-full overflow-hidden border border-border">
               <img
-                src="/Profile.jpg"
+                src="/Profile.png"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
