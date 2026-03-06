@@ -45,8 +45,8 @@ const projects = [
   {
     title: "Tjongklak Batik",
     description:
-      "A real-time cryptocurrency tracking dashboard with portfolio management and swap features.",
-    tags: ["React", "TypeScript", "API", "Charts"],
+      "An e-commerce platform for selling batik products online, featuring a modern interface and increasing purchasing experience.",
+    tags: ["React", "TypeScript", "API"],
     category: "Software Development",
     link: "https://tjongklakbatik.com",
     images: ["/Tjongklak_Batik(1).png", "/Tjongklak_Batik (2).png"],

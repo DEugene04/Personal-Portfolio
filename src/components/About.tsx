@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+
 const About = () => {
   return (
     <section id="about" className="py-28 px-6">
@@ -16,7 +18,7 @@ const About = () => {
             <div className="space-y-5 text-muted-foreground leading-relaxed font-body">
               <p>
                 As a third-year Information Systems and Management student at
-                BINUS University, I am passionate about data analytics and its
+                BINUS University, I am passionate about data and its
                 problem-solving nature similar to like piecing together a
                 puzzle, which I find both engaging and deeply satisfying. Beyond
                 my academic foundation, I actively seek real-world experience by
@@ -25,6 +27,17 @@ const About = () => {
                 deepen my expertise in data. Currently I am looking for an
                 internship in the field of data science.
               </p>
+            </div>
+            <div className="space-y-5 text-muted-foreground leading-relaxed font-body mt-5">
+              <a
+                href="https://www.linkedin.com/in/dave-eugene/"
+                target="_blank"
+                className="text-primary flex gap-2"
+              >
+                {" "}
+                Find me on LinkedIn{" "}
+                <ArrowUpRight className="h-4 w-4 text-primary" />
+              </a>
             </div>
           </div>
 

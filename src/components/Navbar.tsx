@@ -1,4 +1,4 @@
-const navLinks = ["Projects", "Skills", "About"];
+const navLinks = ["About", "Experience", "Projects"];
 
 const Navbar = () => {
   const scrollTo = (id: string) => {
@@ -11,8 +11,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
         <div className="font-heading text-lg font-semibold tracking-tight">
-          <span className="text-primary">Dave</span>
-          <span className="text-foreground">Portfolio</span>
+          <span className="text-primary">Dave Eugene W.</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
