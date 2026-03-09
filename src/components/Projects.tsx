@@ -88,7 +88,7 @@ const projects = [
   {
     title: "RAG AI Agent",
     description:
-      "An AI-powered Telegram agent that enables users to seamlessly manage and monitor gmail, google calendar, and social media (X) through a single chat interface. It intelligently processes  messages, understands user’s intent, and performs tasks like scheduling events, reading emails, and posting to platforms",
+      "Built an AI-powered chatbot using Retrieval-Augmented Generation (RAG) that retrieves relevant knowledge from a vector database to generate accurate, context-aware responses. Developed an automated agent that monitors a Google Drive folder, processes newly uploaded files, chunks the content, and stores embeddings in a Pinecone vector database, enabling efficient and continuously updated RAG-based question answering.",
     tags: ["N8N", "Prompt Engineering", "Retrieval-Augmented Generation"],
     category: "Automation",
     link: "#",
