@@ -64,10 +64,23 @@ const projects = [
     title: "Tjongklak Batik",
     description:
       "An e-commerce platform for selling batik products online, featuring a modern interface and increasing purchasing experience.",
-    tags: ["React", "TypeScript", "API"],
+    tags: ["React", "TypeScript", "API", "Tailwind CSS"],
     category: "Software Development",
     link: "https://tjongklakbatik.com",
     images: ["/Tjongklak_Batik(1).png", "/Tjongklak_Batik (2).png"],
+  },
+  {
+    title: "Registration Website",
+    description:
+      "Designed and implemented a MySQL database schema supporting 2,200+ registrants, optimizing tables for user roles, accounts, and transaction records. Ensured accurate data capture, validation, and retrieval for registration and payment workflows, while processing and reconciling over 500 payment records using data verification logic to maintain financial integrity. Led a team of three to deliver a full-stack registration platform within three weeks, collaborating across front-end and back-end systems to align data requirements and ensure reliable system functionality.",
+    tags: ["React", "TypeScript", "API", "Tailwind CSS"],
+    category: "Software Development",
+    link: "https://github.com/DEugene04/Launching-BOS.git",
+    images: [
+      "/BNCC_Opening_Season(1).png",
+      "/BNCC_Opening_Season(2).png",
+      "/BNCC_Opening_Season(3).png",
+    ],
   },
   {
     title: "Telegram AI Agent",
