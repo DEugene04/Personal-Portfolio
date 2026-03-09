@@ -149,34 +149,37 @@ const Projects = () => {
               key={i}
               className="group bg-card border-border hover:border-primary/30 transition-colors cursor-pointer w-full max-w-3xl"
             >
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <CardContent className="p-6">
-                  {/* IMAGE CAROUSEL PLACEHOLDER */}
-                  {project.images?.length ? (
-                    <div className="mb-5">
-                      <Carousel className="w-full">
-                        <CarouselContent>
-                          {project.images.map((src, idx) => (
-                            <CarouselItem key={idx}>
-                              <div className="w-full overflow-hidden rounded-lg border border-border">
-                                <img
-                                  src={src}
-                                  alt={`${project.title} screenshot ${idx + 1}`}
-                                  className="h-56 w-full object-cover"
-                                  loading="lazy"
-                                />
-                              </div>
-                            </CarouselItem>
-                          ))}
-                        </CarouselContent>
+              <CardContent className="p-6">
+                {/* IMAGE CAROUSEL PLACEHOLDER */}
+                {project.images?.length ? (
+                  <div className="mb-5">
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        {project.images.map((src, idx) => (
+                          <CarouselItem key={idx}>
+                            <div className="w-full overflow-hidden rounded-lg border border-border">
+                              <img
+                                src={src}
+                                alt={`${project.title} screenshot ${idx + 1}`}
+                                className="h-56 w-full object-cover"
+                                loading="lazy"
+                              />
+                            </div>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
 
-                        {/* Keep subtle controls; doesn’t change your theme */}
-                        <CarouselPrevious className="left-2" />
-                        <CarouselNext className="right-2" />
-                      </Carousel>
-                    </div>
-                  ) : null}
-
+                      {/* Keep subtle controls; doesn’t change your theme */}
+                      <CarouselPrevious className="left-2" />
+                      <CarouselNext className="right-2" />
+                    </Carousel>
+                  </div>
+                ) : null}
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="text-lg font-semibold font-heading text-card-foreground">
                       {project.title}
@@ -200,8 +203,8 @@ const Projects = () => {
                       </Badge>
                     ))}
                   </div>
-                </CardContent>
-              </a>
+                </a>
+              </CardContent>
             </Card>
           ))}
         </div>
