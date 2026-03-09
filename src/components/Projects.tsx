@@ -43,6 +43,24 @@ const projects = [
     ],
   },
   {
+    title: "Data Visualization Final Semester Project",
+    description:
+      "Developed a Tableau data visualization project analyzing GDP growth trends by conducting exploratory data analysis (EDA) to identify anomalies and economic downturns, including major declines in 1998 and 2015, and built time-series dashboards to support economic trend analysis and insight generation.",
+    tags: ["Tableau", "Ms Excel", "Data Visualization"],
+    category: "Data",
+    link: "https://github.com/DEugene04/Tableau-UAS-Davis.git",
+    images: ["/Davis-FullDashboard.png"],
+  },
+  {
+    title: "RYPaws SQL Project",
+    description:
+      "Designed and implemented a relational database schema for a pet shop management system to digitize manual sales and purchasing records, developing SQL DDL and DML queries for table creation and data management while simulating database transactions to ensure data consistency and reliable operations.",
+    tags: ["SQL Server Management Studio", "MySQL"],
+    category: "Data",
+    link: "https://github.com/DEugene04/RYPaws-SQL.git",
+    images: ["/RYPaws-ERD.png"],
+  },
+  {
     title: "Tjongklak Batik",
     description:
       "An e-commerce platform for selling batik products online, featuring a modern interface and increasing purchasing experience.",
@@ -112,69 +130,65 @@ const Projects = () => {
             </button>
           ))}
         </div>
-        <div className="flex flex-col items-center gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {filteredProjects.map((project, i) => (
             <Card
               key={i}
               className="group bg-card border-border hover:border-primary/30 transition-colors cursor-pointer w-full max-w-3xl"
             >
-              <CardContent className="p-6">
-                {/* IMAGE CAROUSEL PLACEHOLDER */}
-                {project.images?.length ? (
-                  <div className="mb-5">
-                    <Carousel className="w-full">
-                      <CarouselContent>
-                        {project.images.map((src, idx) => (
-                          <CarouselItem key={idx}>
-                            <div className="w-full overflow-hidden rounded-lg border border-border">
-                              <img
-                                src={src}
-                                alt={`${project.title} screenshot ${idx + 1}`}
-                                className="h-56 w-full object-cover"
-                                loading="lazy"
-                              />
-                            </div>
-                          </CarouselItem>
-                        ))}
-                      </CarouselContent>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <CardContent className="p-6">
+                  {/* IMAGE CAROUSEL PLACEHOLDER */}
+                  {project.images?.length ? (
+                    <div className="mb-5">
+                      <Carousel className="w-full">
+                        <CarouselContent>
+                          {project.images.map((src, idx) => (
+                            <CarouselItem key={idx}>
+                              <div className="w-full overflow-hidden rounded-lg border border-border">
+                                <img
+                                  src={src}
+                                  alt={`${project.title} screenshot ${idx + 1}`}
+                                  className="h-56 w-full object-cover"
+                                  loading="lazy"
+                                />
+                              </div>
+                            </CarouselItem>
+                          ))}
+                        </CarouselContent>
 
-                      {/* Keep subtle controls; doesn’t change your theme */}
-                      <CarouselPrevious className="left-2" />
-                      <CarouselNext className="right-2" />
-                    </Carousel>
-                  </div>
-                ) : null}
+                        {/* Keep subtle controls; doesn’t change your theme */}
+                        <CarouselPrevious className="left-2" />
+                        <CarouselNext className="right-2" />
+                      </Carousel>
+                    </div>
+                  ) : null}
 
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-lg font-semibold font-heading text-card-foreground">
-                    {project.title}
-                  </h3>
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-lg font-semibold font-heading text-card-foreground">
+                      {project.title}
+                    </h3>
 
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
                     <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                  </a>
-                </div>
+                  </div>
 
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  {project.description}
-                </p>
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
 
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <Badge
-                      key={tag}
-                      variant="secondary"
-                      className="text-xs font-normal"
-                    >
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <Badge
+                        key={tag}
+                        variant="secondary"
+                        className="text-xs font-normal"
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </a>
             </Card>
           ))}
         </div>
