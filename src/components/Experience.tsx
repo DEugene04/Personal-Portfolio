@@ -14,7 +14,7 @@ type ExperienceItem = {
 const experiences: ExperienceItem[] = [
   {
     role: "Data Analyst",
-    org: "PT Ousean Digital Group",
+    org: "PT Ousean Global Digital",
     dates: "Sep 2025 - Dec 2025",
     location: "Indonesia",
     description: [
