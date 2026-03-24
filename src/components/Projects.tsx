@@ -21,6 +21,21 @@ const projects = [
     images: ["/NLP-Review(1).png", "/NLP-Review(2).png"],
   },
   {
+    title: "Retail Demand Forecasting MLOps",
+    description:
+      "This project is an end-to-end MLOps pipeline with the purpose of retail demand forecasting. This project covers the full ML Lifecycle such as data processing, feature engineering, experiment tracking, reproducible pipelines, and containerized deployment.",
+    tags: ["MLOps", "Machine Learning", "FastAPI", "Docker"],
+    category: "Data",
+    link: "https://github.com/DEugene04/retail-demand-forecasting-mlops.git",
+    images: [
+      "API (1).png",
+      "API (2).png",
+      "Docker (1).png",
+      "MLflow (1).png",
+      "MLflow (2).png",
+    ],
+  },
+  {
     title: "Data Analysis Case Studies",
     description:
       "Performed exploratory data analysis on diverse datasets including crime statistics, housing listings, education performance, movie releases, and Nobel Prize records. Applied data cleaning, feature engineering, statistical analysis, and visualization to uncover trends, patterns, and key insights.",
@@ -105,7 +120,7 @@ const projects = [
     tags: ["N8N", "Prompt Engineering", "Retrieval-Augmented Generation"],
     category: "Automation",
     link: "#",
-    images: ["/N8N RAG Agent (Full).png", "/N8N RAG Agent (RAG Embedding).png"],
+    images: ["/N8N RAG Agent (RAG Embedding).png"],
   },
 ];
 
