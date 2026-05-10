@@ -122,10 +122,28 @@ const projects = [
     link: "#",
     images: ["/N8N RAG Agent (RAG Embedding).png"],
   },
+  {
+    title: "HR Strategy Consulting Capstone - Emerge Performance",
+    description:
+      "A strategic recommendation consulting deck advising a real-world client on HR challenges",
+    tags: ["Consulting", "Business Development", "Human Resource Management"],
+    category: "Business",
+    link: "https://drive.google.com/file/d/1I5nvNfExU8n053milG7uWt6QRCQxNcxJ/view?usp=sharing",
+    images: [
+      "FRS Cover.png",
+      "FRS Pressure Points.png",
+      "FRS Solution 1 (1).png",
+      "FRS Solution 1 (2).png",
+      "FRS Solution 1 Risk.png",
+      "FRS Solution 2.png",
+      "FRS Solution 2 Risk.png",
+      "FRS Conclusion.png",
+    ],
+  },
 ];
 
 const Projects = () => {
-  const categories = ["Data", "Software Development", "Automation"];
+  const categories = ["Data", "Software Development", "Automation", "Business"];
 
   const [selectedCategory, setSelectedCategory] = useState("Data");
 
